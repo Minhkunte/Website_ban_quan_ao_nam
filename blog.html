@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reponsive.css">
+    <link rel="stylesheet" href="./assets/css/flash-sale.css">
+    <link rel="stylesheet" href="./Site1/Home.css" media="screen">
+    <!-- <link rel="stylesheet" href="./Site1/nicepage.css" media="screen">  -->
+
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="./assets/libra/OwlCarousel/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/libra/OwlCarousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="JS/jquery/jquery.min.js"></script>
+    <script src="./assets/libra/OwlCarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+
+    <!--font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container-fluid">
+        <!-- top header -->
+        <div class="top-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col login">
+                        <a href="#" onclick="checkLogin()">
+                            <i class="bi bi-person-circle"></i>
+                            <span id="titl-log">Đăng nhập / Đăng ký</span>
+                        </a>
+                    </div>
+                    <div class="col info">
+                        <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="top-head-res">
+                    <a href="#" onclick="checkLogin()"><i class="bi bi-person-circle"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- mid header -->
+        <div class="mid-head">
+            <div class="container">
+                <div class="row">
+                    <!-- logo -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg logo">
+                        <a href="Index.html"><img src="./assets/img/Logo_KyStyle.gif" alt="Logo"></a>
+                    </div>
+                    <!-- box search -->
+                    <div class="col-xs col-sm col-md col-lg-5 box-search">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                        <button><i class="bi bi-search"></i></button>
+                    </div>
+                    <!-- cart -->
+                    <div class="col-xs col-sm col-md col-lg">
+                        <div class="cart">
+                            <a href="./cart.html"><button><i class="bi bi-cart3"></i></button></a>
+                            <span class="title-total">Tổng cộng: </span>
+                            <span class="total-cart total"></span>
+                            <span>₫</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bot header -->
+        <div class="bot-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col menu-second">
+                        <a href="./allDeparterment.html">ALL DEPARTMENTS</a>
+                        <div class="body-menu">
+                            <ul>
+                                <li>
+                                    <a href="./AoKhoac.html">Áo khoác nam</a>
+                                </li>
+                                <li>
+                                    <a href="./AoThun.html">Áo thun nam</a>
+                                </li>
+                                <li>
+                                    <a href="./AoSoMi.html">Áo sơ mi nam</a>
+                                </li>
+                                <li>
+                                    <a href="./QuanShort.html">Quần short nam</a>
+                                </li>
+                                <li>
+                                    <a href="./QuanAu.html">Quần dài/Quần âu</a>
+                                </li>
+                                <li style="border-bottom: none;">
+                                    <a href="./PhuKien.html">Phụ kiện nam</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9 menu-main">
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a class="nav-item" active-color="#505050" href="./Index.html">SHOP</a>
+                                </li>
+                                <li>
+                                    <a class="nav-item is-active" active-color="#505050" href="blog.html">BLOG</a>
+                                </li>
+                                <li class="products">
+                                    <a class="nav-item" active-color="#505050" href="./flash-sale.html">FLASH
+                                        SALE</a>
+                                </li>
+                                <li>
+                                    <a class="nav-item" active-color="#505050" href="./contact.html">CONTACT</a>
+                                </li>
+                                <span class="nav-indicator"></span>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive-menu">
+                    <i onclick="navbar()" class="bi bi-list"></i>
+                    <div class="menu" id="menu-resp">
+                        <div class="row">
+                            <div class="col-md">
+                                <a href="Index.html">SHOP</a>
+                            </div>
+                            <div class="col-md">
+                                <a href="blog.html">BLOG</a>
+                            </div>
+                            <div class="col-md">
+                                <a href="flash-sale.html">FLASH SALE</a>
+                            </div>
+                            <div class="col-md" style="border-bottom: none;">
+                                <a href="contact.html">CONTACT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- content -->
+    <div class="container-fluid content mt-5 mb-5">
+        <div class="container">
+            <h3>Blog</h3>
+            <div class="line"></div>
+            <div class="products mt-5 text-center">
+                <section class="u-align-left u-clearfix u-section-1" id="carousel_a0b3">
+                    <div class="u-clearfix u-sheet u-sheet-1">
+                      <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                        <div class="u-layout">
+                          <div class="u-layout-row">
+                            <div class="u-container-style u-layout-cell u-size-38 u-layout-cell-1">
+                              <div class="u-border-6 u-border-grey-15 u-border-no-bottom u-border-no-left u-border-no-top u-container-layout u-valign-bottom u-container-layout-1">
+                                <h2 class="u-align-left u-custom-font u-font-montserrat u-text u-text-1"> Nỗ Lực Không Biết Mệt Mỏi Để Thành Công&nbsp;</h2>
+                                <h6 class="u-align-left u-text u-text-2">Hãy Theo Đuổi Mê Của Mình Bằng Việc Nghiêm Túc Thực Hiện nÓ</h6>
+                                <p class="u-align-justify u-text u-text-3"> &nbsp; &nbsp; &nbsp;Với niềm đang mê trở thành
+              một nhà thiết kế thời trang dành cho nam giới, ngay từ nhỏ ​tôi đã vô cùng thích
+              thú khi đã tự thiết kế cho mình n​hững sản phẩm độc đáo từ chính những vận dụng đơn
+              giản có sẵn. Sau khi ra trường những sản phẩm do tay tôi thiết kế hồi nhỏ đã được
+              hiện thực hóa để có thể trình làng trước công chúng . Với một số tiền ít ỏi, tôi
+              đã bắt đầu thành lập cho mình một số cửa hàng bán quần áo thời trang dành cho
+              nam giới tại Việt Nam. Cửa hàng đầu tiê​n được thành lập tại Hưng Yên có​ tên là KyStyle
+              với những mẫu thiết kế độc đáo và mới lạ do chính tay tôi tạo ​nên. Để có thể níu
+              chân khách hàng, chúng tôi luôn có một đội ngũ xử lý kỹ thuật khi xảy ra vấn đề
+              mà khách hàng không mong muốn ở sản phẩm của cửa hàng chúng tôi sau khi mua hàng.
+              Nếu có cơ hội cùng được làm việc với tôi với vị trí là nhân viên maketing hãy nộp
+              hồ sơ tại địa chỉ Nhân Hòa – Mỹ Hào -Hưng Yên.</p>
+                              </div>
+                            </div>
+                            <div class="u-align-center u-container-style u-layout-cell u-size-22 u-layout-cell-2">
+                              <div class="u-container-layout u-container-layout-2">
+                                <div class="u-image u-image-circle u-image-1" alt="" data-image-width="720" data-image-height="722"></div>
+                                <p class="u-text u-text-grey-40 u-text-4">Vũ Ngọc Minh<br>Sinh viên năm hai - Trường Đại học SPKT Hưng Yên
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            </div> 
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md footer1">
+                    <h5>ABOUT</h5>
+                    <a href="Index.html"><img src="./assets/img/Logo_KyStyle_(1).png" alt="logo"></a>
+                    <p>Học cách yêu bản thân, đơn giản là mua đồ mới sau đó thưởng thức một hình ảnh mình thật xinh đẹp, 
+                        thật ngầu. Tại sao không? Hãy để chúng mình tư vấn cho bạn nhé !!!
+                    </p>
+                </div>
+                <div class="col-md footer2">
+                    <h5>ADDRESS</h5>
+                    <div class="footer-info">
+                        <p>
+                            <i class="bi bi-pin-map"></i>
+                            <span>Đường Đỗ Thế Diên, Mỹ Hào, Hưng Yên</span>
+                        </p>
+                        <p>
+                            <a href="tel:0842337877">
+                                <i class="bi bi-telephone"></i>
+                                <span>0842337877</span>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:minhngocvu80802002@gmail.com">
+                                <i class="bi bi-envelope"></i>
+                                <span>minhngocvu80802002@gmail.com</span>
+                            </a>
+                        </p>
+                        <p>
+                            <i class="bi bi-clock"></i>
+                            <span>Sunday - Friday 6AM - 09:00 PM</span>
+                        </p>
+                    </div>
+                    <div class="footer-icon-info">
+                        <a href="https://www.facebook.com/">
+                            <button><i class="bi bi-facebook"></i></button>
+                        </a>
+                        <a href="https://www.twitter.com/">
+                            <button><i class="bi bi-twitter"></i></button>
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <button><i class="bi bi-instagram"></i></button>
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <button><i class="bi bi-youtube"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md footer3">
+                    <h5>LIKE & SUBCRIBE</h5>
+                    <div class="fanpage">
+                        
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-end">
+                <span><i>Copyright &copy; KyStyle</i></span>
+                <img src="./assets/img/cards-1.png" alt="pay">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+
+
+    <script src="script.js"></script>
+    <script src="JS/user.js"></script>
+    <script src="JS/control.js"></script>
+    <script src="JS/hideLogin.js"></script>
+
+</body>
+
+</html>
